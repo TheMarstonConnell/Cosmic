@@ -1,0 +1,10 @@
+{
+    "variants": 
+    {
+        "facing=north": { "model": "miccw:dust_collector", "y": 90  },
+        "facing=east": { "model": "miccw:dust_collector", "y": 180 },
+        "facing=south": { "model": "miccw:dust_collector", "y": 270 },
+        "facing=west": { "model": "miccw:dust_collector" }
+
+    }
+}

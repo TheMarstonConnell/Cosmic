@@ -1,0 +1,13 @@
+{
+    "parent": "block/orientable",
+    "textures": 
+    {
+        "particle": "miccw:blocks/compressor_front_off",
+        "up": "miccw:blocks/compressor",
+        "down": "miccw:blocks/compressor",
+        "north": "miccw:blocks/compressor_front_on",
+        "east": "miccw:blocks/compressor",
+        "south": "miccw:blocks/compressor",
+        "west": "miccw:blocks/compressor"
+    }
+}
