@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "R R",
+        "R R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:meteor_ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:boots_meteor",
+        "count": 1
+    }
+}

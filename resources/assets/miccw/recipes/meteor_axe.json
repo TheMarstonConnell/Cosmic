@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RR",
+        "RS",
+        " S"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:meteor_ingot"
+        },
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:meteor_axe",
+        "count": 1
+    }
+}

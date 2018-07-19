@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "ICI",
+        "IPI",
+        "IEI"
+    ],
+   
+    "key":
+    {
+        "C":
+        {
+            "item": "minecraft:chest"
+        },
+        "P":
+        {
+            "item": "minecraft:diamond_pickaxe"
+        },
+        "I":
+        {
+            "item": "minecraft:iron_block"
+        },
+        "E":
+        {
+            "item": "minecraft:ender_pearl"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:bedrock_miner",
+        "count": 1
+    }
+}

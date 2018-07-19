@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        "RER"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:meteor_ingot"
+        },
+        "E":
+        {
+            "item": "miccw:helmet_dense_steel"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:place_helmet",
+        "count": 1
+    }
+}

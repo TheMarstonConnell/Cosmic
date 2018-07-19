@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RR",
+        "SR",
+        "S "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:comet_tail_ingot"
+        },
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:comet_axe",
+        "count": 1
+    }
+}

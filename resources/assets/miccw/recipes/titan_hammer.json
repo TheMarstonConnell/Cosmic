@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "OGR",
+        "OSR",
+        " S "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:meteor_ingot"
+        },
+        "O":
+        {
+            "item": "miccw:dense_steel_ingot"
+        },
+        "G":
+        {
+            "item": "miccw:cosmic_gemstone"
+        },
+        "S":
+        {
+            "type": "forge:ore_dict",
+            "ore": "stickIron"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:titan_hammer",
+        "count": 1
+    }
+}

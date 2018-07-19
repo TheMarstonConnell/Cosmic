@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "EIE",
+        "I I",
+        "EIE"
+    ],
+   
+    "key":
+    {
+        "I":
+        {
+            "item": "minecraft:stick"
+        },
+        "E":
+        {
+            "item": "minecraft:stone",
+            "data":0
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:stone_gear",
+        "count": 1
+    }
+}

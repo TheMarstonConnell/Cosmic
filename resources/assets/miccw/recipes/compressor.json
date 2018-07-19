@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "IPI",
+        "G G",
+        "IPI"
+    ],
+   
+    "key":
+    {
+        "P":
+        {
+            "item": "minecraft:piston"
+        },
+        "I":
+        {
+            "item": "minecraft:iron_block"
+        },
+        "G":
+        {
+            "item": "minecraft:glass_pane"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:compressor",
+        "count": 1
+    }
+}

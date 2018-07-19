@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RR",
+        " S",
+        " S"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:dense_steel_ingot"
+        },
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:dense_steel_hoe",
+        "count": 1
+    }
+}

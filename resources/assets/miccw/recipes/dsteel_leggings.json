@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        "R R",
+        "R R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:dense_steel_ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:leggings_dense_steel",
+        "count": 1
+    }
+}

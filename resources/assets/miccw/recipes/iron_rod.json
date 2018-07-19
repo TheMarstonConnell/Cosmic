@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "R",
+        "S",
+        "R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        "S":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:iron_rod",
+        "count": 1
+    }
+}

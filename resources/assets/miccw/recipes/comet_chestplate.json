@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "R R",
+        "RRR",
+        "RRR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:comet_tail_ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:chestplate_comet",
+        "count": 1
+    }
+}

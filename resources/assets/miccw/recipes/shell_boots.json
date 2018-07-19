@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "R R",
+        "RER"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:meteor_ingot"
+        },
+        "E":
+        {
+            "item": "miccw:boots_dense_steel"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:place_boots",
+        "count": 1
+    }
+}

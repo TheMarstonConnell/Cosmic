@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RER",
+        "RRR",
+        "RRR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:meteor_ingot"
+        },
+        "E":
+        {
+            "item": "miccw:chestplate_dense_steel"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:place_chestplate",
+        "count": 1
+    }
+}
