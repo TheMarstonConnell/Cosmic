@@ -33,11 +33,13 @@ import java.util.Set;
 import javax.tools.Tool;
 
 /**
- * Kinda stole a lot of this from SparksHammers so I'm gonna give a huge thanks right here.
+ * Kinda stole a lot of this from SparksHammers so I'm gonna give a huge thanks
+ * right here.
+ * 
  * @author Milomaz1
  *
  */
-public class ItemAOE extends ItemPickaxe implements IHasModel {
+public class ItemAOE extends ItemTool implements IHasModel {
 
 	private static final Set<Block> PickaxeBlocks = Sets.newHashSet(Blocks.ACTIVATOR_RAIL, Blocks.COAL_ORE,
 			Blocks.COBBLESTONE, Blocks.DETECTOR_RAIL, Blocks.DIAMOND_BLOCK, Blocks.DIAMOND_ORE,
@@ -49,10 +51,17 @@ public class ItemAOE extends ItemPickaxe implements IHasModel {
 	private static final Set<Material> PickaxeMats = Sets.newHashSet(Material.ANVIL, Material.GLASS, Material.ICE,
 			Material.IRON, Material.PACKED_ICE, Material.PISTON, Material.ROCK);
 
+	private static final Set<Block> ShovelBlocks = Sets.newHashSet(Blocks.CLAY, Blocks.DIRT, Blocks.FARMLAND,
+			Blocks.GRASS, Blocks.GRAVEL, Blocks.MYCELIUM, Blocks.SAND, Blocks.SNOW, Blocks.SNOW_LAYER, Blocks.SOUL_SAND,
+			Blocks.GRASS_PATH, Blocks.CONCRETE_POWDER);
+	private static final Set<Material> ShovelMats = Sets.newHashSet(Material.GRASS, Material.GROUND, Material.SAND,
+			Material.SNOW, Material.CRAFTED_SNOW, Material.CLAY);
+
 	/**
-	 * Swaps between pick and hammer
+	 * Swaps between 1x1 and 3x3
 	 */
-	private boolean toolType =  true;
+	private boolean toolType = true;
+	private boolean isExcavator;
 
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
@@ -67,10 +76,10 @@ public class ItemAOE extends ItemPickaxe implements IHasModel {
 			toolType = !toolType;
 			playerIn.swingArm(handIn);
 
-			if(!worldIn.isRemote){
-				if(stack.getTagCompound() != null && stack.getTagCompound().getBoolean("hammer")){
+			if (!worldIn.isRemote) {
+				if (stack.getTagCompound() != null && stack.getTagCompound().getBoolean("hammer")) {
 					playerIn.sendMessage(new TextComponentString("Breaking 3x3 blocks..."));
-				}else{
+				} else {
 					playerIn.sendMessage(new TextComponentString("Breaking single blocks..."));
 				}
 			}
@@ -93,10 +102,13 @@ public class ItemAOE extends ItemPickaxe implements IHasModel {
 	public ItemAOE(String name, ToolMaterial material, boolean isExcavator, boolean isInfiniteUse) {
 		// super(isExcavator ? 0f : 2f, isExcavator ? -3f : -3.2f, material,
 		// isExcavator ? ShovelBlocks : PickaxeBlocks);
-		super(material);
+
+		super(material, isExcavator ? ShovelBlocks : PickaxeBlocks);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setHarvestLevel("pickaxe", material.getHarvestLevel());
+		this.isExcavator = isExcavator;
+
+		setHarvestLevel(isExcavator ? "shovel" : "pickaxe", material.getHarvestLevel());
 
 	}
 
@@ -129,7 +141,8 @@ public class ItemAOE extends ItemPickaxe implements IHasModel {
 			if (state.getBlock().isToolEffective(type, state))
 				return true;
 
-		return PickaxeMats.contains(state.getMaterial()) || PickaxeBlocks.contains(state.getBlock());
+		return isExcavator ? ShovelMats.contains(state.getMaterial()) || ShovelBlocks.contains(state.getBlock())
+				: PickaxeMats.contains(state.getMaterial()) || PickaxeBlocks.contains(state.getBlock());
 	}
 
 	public static void getBreakArea(ItemStack hammerStack, BlockPos pos, EnumFacing sideHit, EntityPlayer player) {
@@ -194,7 +207,7 @@ public class ItemAOE extends ItemPickaxe implements IHasModel {
 
 		if (worldIn.getBlockState(new BlockPos(pos.getX() + x, pos.getY() + y, pos.getZ() + z)).getBlock()
 				.getBlockHardness(worldIn.getBlockState(pos2), worldIn, pos2) <= worldIn.getBlockState(pos).getBlock()
-				.getBlockHardness(state, worldIn, pos)) {
+						.getBlockHardness(state, worldIn, pos) + 0.2f) {
 
 			worldIn.getBlockState(pos2).getBlock().harvestBlock(worldIn, (EntityPlayer) entityLiving, pos2,
 					worldIn.getBlockState(pos2), null, stack);
@@ -214,7 +227,6 @@ public class ItemAOE extends ItemPickaxe implements IHasModel {
 
 			getBreakArea(stack, pos, ray.sideHit, player);
 		} else {
-
 
 		}
 		return super.onBlockStartBreak(stack, pos, player);

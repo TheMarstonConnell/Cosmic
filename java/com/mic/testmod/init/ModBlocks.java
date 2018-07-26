@@ -12,6 +12,7 @@ import com.mic.testmod.blocks.machine.compressor.BlockCompressor;
 import com.mic.testmod.blocks.machine.duster.BlockDustCollector;
 import com.mic.testmod.blocks.machine.enscriber.BlockEnscriber;
 import com.mic.testmod.blocks.machine.forge.BlockCosmicForge;
+import com.mic.testmod.blocks.machine.watersource.BlockWaterSource;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -43,4 +44,5 @@ public class ModBlocks {
 	
 	public static final Block COMPRESSOR = new BlockCompressor("compressor");
 	
+	public static final Block WATERSOURCE = new BlockWaterSource("watersource");
 }

@@ -27,6 +27,7 @@ public class CompressorRecipes
 	private CompressorRecipes() 
 	{
 		addCompressorRecipe(new ItemStack(ModItems.PLANET_CRUST), new ItemStack(ModItems.PLANET_CORE));
+		addCompressorRecipe(new ItemStack(Items.GOLD_INGOT), new ItemStack(ModItems.COMPRESSED_GOLD));
 
 	}
 

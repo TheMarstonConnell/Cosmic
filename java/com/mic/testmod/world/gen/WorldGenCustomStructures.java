@@ -37,12 +37,18 @@ public class WorldGenCustomStructures implements IWorldGenerator{
 		case 0:
 			
 			
-			generateStructure(METEOR, world, random, chunkX, chunkZ, 60, Blocks.SAND, BiomeDesert.class);
-			generateStructure(METEOR, world, random, chunkX, chunkZ, 60, Blocks.GRASS, BiomePlains.class);
-			generateStructure(METEOR, world, random, chunkX, chunkZ, 60, Blocks.SAND, BiomeBeach.class);
-			generateStructure(METEOR, world, random, chunkX, chunkZ, 60, Blocks.GRASS, BiomeHills.class);
+			generateStructure(METEOR, world, random, chunkX, chunkZ, 90, Blocks.SAND, BiomeDesert.class);
+			random = new Random();
+			generateStructure(METEOR, world, random, chunkX, chunkZ, 90, Blocks.GRASS, BiomePlains.class);
+			random = new Random();
+			generateStructure(METEOR, world, random, chunkX, chunkZ, 90, Blocks.SAND, BiomeBeach.class);
+			random = new Random();
+			generateStructure(METEOR, world, random, chunkX, chunkZ, 90, Blocks.GRASS, BiomeHills.class);
+			random = new Random();
 			generateStructure(METEOR, world, random, chunkX, chunkZ, 60, Blocks.GRASS, BiomeSavanna.class);
+			random = new Random();
 			generateStructure(METEOR, world, random, chunkX, chunkZ, 60, Blocks.GRASS, BiomeSwamp.class);
+			random = new Random();
 			generateStructure(METEOR, world, random, chunkX, chunkZ, 60, Blocks.HARDENED_CLAY, BiomeMesa.class);
 
 

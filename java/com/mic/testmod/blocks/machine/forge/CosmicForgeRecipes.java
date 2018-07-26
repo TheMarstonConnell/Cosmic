@@ -34,6 +34,7 @@ public class CosmicForgeRecipes
 		addForgeRecipe(new ItemStack(ModItems.PLACE_LEGS), new ItemStack(ModItems.LEGGINGS_COMET), new ItemStack(ModItems.LEGGINGS_GODLY), 5.0F);
 		addForgeRecipe(new ItemStack(ModItems.PLACE_BOOTS), new ItemStack(ModItems.BOOTS_COMET), new ItemStack(ModItems.BOOTS_GODLY), 5.0F);
 		addForgeRecipe(new ItemStack(ModItems.COMET_TAIL_DUST), new ItemStack(Items.DIAMOND), new ItemStack(ModItems.COSMIC_GEMSTONE), 6.8F);
+		addForgeRecipe(new ItemStack(ModItems.COMPRESSED_GOLD), new ItemStack(ModItems.DENSE_STEEL_INGOT), new ItemStack(ModItems.STURDY_GOLD_INGOT), 3.0F);
 
 	}
 

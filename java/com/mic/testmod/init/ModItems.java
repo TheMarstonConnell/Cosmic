@@ -6,14 +6,17 @@ import java.util.List;
 import com.mic.testmod.armor.ArmorBase;
 import com.mic.testmod.armor.EffectArmor;
 import com.mic.testmod.armor.FlightArmor;
+import com.mic.testmod.items.ClickToKillItem;
 import com.mic.testmod.items.ItemBase;
 import com.mic.testmod.items.ItemShiny;
 import com.mic.testmod.items.tools.ItemAOE;
 import com.mic.testmod.items.tools.ToolAxe;
+import com.mic.testmod.items.tools.ToolGlove;
 import com.mic.testmod.items.tools.ToolHammer;
 import com.mic.testmod.items.tools.ToolHoe;
 import com.mic.testmod.items.tools.ToolPickaxe;
 import com.mic.testmod.items.tools.ToolSpade;
+import com.mic.testmod.items.tools.ToolSplitter;
 import com.mic.testmod.items.tools.ToolSword;
 import com.mic.testmod.items.tools.ToolWarAxe;
 import com.mic.testmod.util.Reference;
@@ -29,6 +32,7 @@ import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
+import net.minecraft.item.ItemTool;
 import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.client.event.GuiScreenEvent.PotionShiftEvent;
 import net.minecraftforge.common.util.EnumHelper;
@@ -65,8 +69,10 @@ public class ModItems {
 	public static final Item IRON_ROD = new ItemBase("iron_rod");
 	public static final Item PLANET_CRUST = new ItemBase("planet_crust");
 	public static final Item PLANET_CORE = new ItemBase("planet_core");
-	
-	
+	public static final Item HEART_GEM = new ItemBase("heart_gem");
+	public static final Item EMPTY_HEART_GEM = new ClickToKillItem("empty_heart_gem", HEART_GEM);
+	public static final Item COMPRESSED_GOLD = new ItemBase("compressed_gold");
+	public static final Item STURDY_GOLD_INGOT = new ItemBase("sturdy_gold_ingot");
 	
 	//Tools
 	public static final ItemSword METEOR_SWORD = new ToolSword("meteor_sword", MATERIAL_METEOR);
@@ -77,7 +83,10 @@ public class ModItems {
 	
 	
 	public static final ItemAOE TITAN_HAMMER = new ToolHammer("titan_hammer", MATERIAL_GOD);
-	public static final ItemAxe HORIZON_AXE = new ToolWarAxe("horizon_breaker", MATERIAL_GOD);
+	public static final Item HORIZON_AXE = new ToolWarAxe("horizon_breaker", MATERIAL_GOD);
+	public static final ItemAOE COLOSSAL_SPLITTER = new  ToolSplitter("colossal_splitter", MATERIAL_GOD);
+	public static final ItemSword COSMIC_GLOVE = new ToolGlove("glove", MATERIAL_GOD);
+	
 
 	public static final ItemSword DSTEEL_SWORD = new ToolSword("dense_steel_sword", MATERIAL_DSTEEL);
 	public static final ItemPickaxe DSTEEL_PICKAXE = new ToolPickaxe("dense_steel_pickaxe", MATERIAL_DSTEEL);

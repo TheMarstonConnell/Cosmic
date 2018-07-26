@@ -1,5 +1,6 @@
 package com.mic.testmod.items.tools;
 
+import com.google.common.collect.Multimap;
 import com.mic.testmod.Main;
 import com.mic.testmod.init.ModItems;
 import com.mic.testmod.util.IHasModel;
@@ -22,4 +23,5 @@ public class ToolSword extends ItemSword implements IHasModel{
 	public void registerModels() {
 		Main.proxy.registerItemRenderer(this, 0, "inventory");
 	}
+
 }
