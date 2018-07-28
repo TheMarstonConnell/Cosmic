@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        " C ",
+        "IPI",
+        "EEE"
+    ],
+   
+    "key":
+    {
+        "C":
+        {
+            "item": "minecraft:iron_bars"
+        },
+        "P":
+        {
+            "item": "minecraft:hopper"
+        },
+        "I":
+        {
+            "type": "forge:ore_dict",
+            "ore": "gearStone"
+        },
+        "E":
+        {
+            "item": "minecraft:stone_slab",
+            "data":0
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:dust_collector",
+        "count": 1
+    }
+}

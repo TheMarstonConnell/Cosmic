@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "R R",
+        "RRR",
+        "RRR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:dense_steel_ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:chestplate_dense_steel",
+        "count": 1
+    }
+}

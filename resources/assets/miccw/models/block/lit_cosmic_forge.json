@@ -1,0 +1,13 @@
+{
+    "parent": "block/orientable",
+    "textures": 
+    {
+        "particle": "miccw:blocks/cosmic_forge_front_off",
+        "up": "miccw:blocks/cosmic_forge",
+        "down": "miccw:blocks/cosmic_forge",
+        "north": "miccw:blocks/cosmic_forge_front_on",
+        "east": "miccw:blocks/cosmic_forge",
+        "south": "miccw:blocks/cosmic_forge",
+        "west": "miccw:blocks/cosmic_forge"
+    }
+}

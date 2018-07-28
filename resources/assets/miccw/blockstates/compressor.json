@@ -1,0 +1,13 @@
+{
+    "variants": 
+    {
+        "burning=false,facing=north": { "model": "miccw:compressor" },
+        "burning=false,facing=east": { "model": "miccw:compressor", "y": 90 },
+        "burning=false,facing=south": { "model": "miccw:compressor", "y": 180 },
+        "burning=false,facing=west": { "model": "miccw:compressor", "y": 270 },
+        "burning=true,facing=north": { "model": "miccw:on_compressor" },
+        "burning=true,facing=east": { "model": "miccw:on_compressor", "y": 90 },
+        "burning=true,facing=south": { "model": "miccw:on_compressor", "y": 180 },
+        "burning=true,facing=west": { "model": "miccw:on_compressor", "y":270  }
+    }
+}

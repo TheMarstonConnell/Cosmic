@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        "RER",
+        "R R"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:meteor_ingot"
+        },
+        "E":
+        {
+            "item": "miccw:leggings_dense_steel"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:place_leggings",
+        "count": 1
+    }
+}

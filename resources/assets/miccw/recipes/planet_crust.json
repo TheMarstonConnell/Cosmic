@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "RRR",
+        "RIR",
+        "RRR"
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:dense_rock"
+        },
+        "I":
+        {
+            "item": "minecraft:iron_block"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:planet_crust",
+        "count": 1
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "OGR",
+        "OS ",
+        " S "
+    ],
+   
+    "key":
+    {
+        "R":
+        {
+            "item": "miccw:meteorite_block"
+        },
+        "O":
+        {
+            "item": "miccw:dense_steel_ingot"
+        },
+        "G":
+        {
+            "item": "miccw:cosmic_gemstone"
+        },
+        "S":
+        {
+            "type": "forge:ore_dict",
+            "ore": "stickIron"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:horizon_breaker",
+        "count": 1
+    }
+}

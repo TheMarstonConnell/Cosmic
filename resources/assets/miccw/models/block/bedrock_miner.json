@@ -1,0 +1,12 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "particle": "miccw:blocks/bedrock_miner",
+        "up": "miccw:blocks/bedrock_miner_top",
+        "down": "miccw:blocks/bedrock_miner_bottom",
+        "north": "miccw:blocks/bedrock_miner",
+        "east": "miccw:blocks/bedrock_miner",
+        "south": "miccw:blocks/bedrock_miner",
+        "west": "miccw:blocks/bedrock_miner"
+    }
+}

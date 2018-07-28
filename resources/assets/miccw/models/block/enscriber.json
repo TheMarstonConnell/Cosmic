@@ -1,0 +1,12 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "particle": "miccw:blocks/enscriber",
+        "up": "miccw:blocks/enscriber_top",
+        "down": "miccw:blocks/enscriber",
+        "north": "miccw:blocks/enscriber",
+        "east": "miccw:blocks/enscriber",
+        "south": "miccw:blocks/enscriber",
+        "west": "miccw:blocks/enscriber"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "DPD",
+        "FBF",
+        "ICI"
+    ],
+   
+    "key":
+    {
+        "P":
+        {
+            "item": "minecraft:piston"
+        },
+        "F":
+        {
+            "item": "minecraft:furnace"
+            
+        },
+        "B":
+        {
+            "item": "minecraft:bucket"
+        },
+        "C":
+        {
+            "item": "minecraft:cauldron"
+        },
+        "I":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        "D":
+        {
+            "item": "minecraft:dispenser"
+        }
+    },
+   
+    "result":
+    {
+        "item": "miccw:cosmic_forge",
+        "count": 1
+    }
+}
